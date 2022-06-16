@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="1.css">
+	<title>Take notes</title>
+
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <h3 id="head"><b>Keep Notes</b></h3>
+          
+          <form class="d-flex" id="filter" method="get" role="search">
+            <button class="btn btn-outline-warning" id="SortTitle">Sort^</button>
+            &nbsp;&nbsp;&nbsp;
+            <input class="form-control me-2" id="srch" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+    </nav>
+    <br>
+<header>
+        <div class="container">
+                <h4 class="card-title">
+                    Add a Note :
+                </h4>
+                    <div class="form-group">
+                    <form class="mainform"><input type="text" class="form-control" id="sub" placeholder="subject">
+                    <textarea class="form-control" id="text" rows="3" placeholder="write your note here...">
+                    </textarea>
+                    </div>
+                    <button  id="add"> Note</button>
+                    </form>
+        <br>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <h2>Your Notes</h2>
+          <hr>
+        <div id="notes" class="note_container"> 
+        </div>
+</section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="1.js"></script>
+</body>
+</html>
